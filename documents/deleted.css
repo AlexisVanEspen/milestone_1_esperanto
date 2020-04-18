@@ -1,0 +1,26 @@
+/*  Deleted chunks of the stylesheets. I keep them just in case.
+    This file can be safely deleted after the project's submission.
+*/
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+    /*          1       2       3       4       5       6       7       8       9       10      11      12  */
+    /* 1  */    "logo   logo    logo    banner  banner  banner  banner  banner  banner  banner  banner  banner"
+    /* 2  */    "logo   logo    logo    banner  banner  banner  banner  banner  banner  banner  banner  banner"
+    /* 3  */    "nav    nav     nav     content content content content content content content content content"
+    /* 4  */    "nav    nav     nav     content content content content content content content content content"
+    /* 5  */    "nav    nav     nav     content content content content content content content content content"
+    /* 6  */    "nav    nav     nav     content content content content content content content content content"    
+    /* 7  */    "nav    nav     nav     content content content content content content content content content"    
+    /* 8  */    "nav    nav     nav     content content content content content content content content content"
+    /* 9  */    "nav    nav     nav     content content content content content content content content content"
+    /* 10 */    "nav    nav     nav     content content content content content content content content content"
+    /* 11 */    "footer footer footer   footer  footer  footer  footer  footer  footer  footer  footer  footer"
+    /* 12 */    "footer footer footer   footer  footer  footer  footer  footer  footer  footer  footer  footer"                 
+    ;
+    border: 1px solid black;
+    min-height: 90vh;
+}

@@ -13,11 +13,9 @@ html {
     font-family: 'Open Sans', sans-serif;
     margin: 15px;
 }
-
 img {
 	max-width: 100%;
 }
-
 *, *:before, *:after {
 	box-sizing: inherit;
 }
@@ -25,42 +23,46 @@ img {
 /*  Create grid. */
 #container {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    border: 1px solid black;
-    min-height: 1vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+    /*          1       2       3       4       5       6       7       8       9       10      11      12  */
+    /* 1  */    "header header  header  header  header  header  header  header  header  header  header  header"
+    /* 2  */    "header header  header  header  header  header  header  header  header  header  header  header"
+    /* 3  */    "nav    nav     content content content content content content content content content content"
+    /* 4  */    "nav    nav     content content content content content content content content content content"
+    /* 5  */    "nav    nav     content content content content content content content content content content"
+    /* 6  */    "nav    nav     content content content content content content content content content content"    
+    /* 7  */    "nav    nav     content content content content content content content content content content"    
+    /* 8  */    "nav    nav     content content content content content content content content content content"
+    /* 9  */    "nav    nav     content content content content content content content content content content"
+    /* 10 */    "nav    nav     content content content content content content content content content content"
+    /* 11 */    "nav    nav     content content content content content content content content content content"
+    /* 12 */    "footer footer footer   footer  footer  footer  footer  footer  footer  footer  footer  footer"                 
+    ;
+    border: 1px solid rgb(151, 83, 83);
+    min-height: 95vh;
 }
-
 header {
-    grid-column: 1 / 6;
-    grid-row: 1 / 2;
-    border: 1px solid red;
-    min-height: .2vh;
+    grid-area: header;
+    background-color: red;
 }
+#logo {
 
+}
 #banner {
-    grid-column: 1 / 6;
-    grid-row: 1;
-    border: 1px solid pink;
+    
 }
-
 nav {
-    grid-column: 1 / 6;
-    grid-row: 2;
-    border: 1px solid orange;
+    grid-area: nav;
+    background-color: orange;
 }
-
-#main-content {
-    grid-column: 1 / 6;
-    grid-row: 3 / 5;
-    border: 1px solid blue;
-    min-height: 0.6vh;
+#content {
+    grid-area: content;
+    background-color: blue;
 }
-
 footer {
-    grid-column: 1 / 6;
-    grid-row: 6;
-    border: 1px solid green;
-    min-height: 0.2vh;
+    grid-area: footer;
+    background-color: green;
 }
 
